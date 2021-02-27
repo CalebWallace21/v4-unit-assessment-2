@@ -12,3 +12,126 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+body {
+    height: 90VH;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-header {
+    position: fixed;  
+    width:100%;
+    height: 10vh;    
+    top: 0px;
+    background-color: rgb(37, 37, 37);    
+    font-family: nunito;
+    Display:flex;
+    align-items: center;
+    font-weight: bold;      
+    z-index: 1;
+}
+.website-title{
+    color: rgb(42, 171, 226);
+    font-size: 32px;    
+    position: relative;
+    left: 10px;    
+}
+.header-options {
+    color: white;
+    position: absolute;
+    right: 10vh;   
+    word-spacing: 50px;   
+}
+.header-signIn {
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+.help-image {    
+    width: 50px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1;
+}
+.Skill-Check2 {
+    width: 50%;
+    position: relative;
+    top: 15VH;
+    left: 10vh;
+}
+.your-name {
+    width: 30vh;
+    height: auto;    
+    position: absolute;
+    left: 75%;
+    top: 18%;    
+    margin-right: 10%;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    box-shadow: 5px 5px 15px 10px rgba(102, 75, 75, .3)
+}
+.profile-pic {
+    width: 20vh;        
+}
+.profile-font {
+    margin-bottom: 10px;
+}
+.popular-articles {
+    width: 30vh;
+    height: auto;    
+    position: absolute;
+    left: 75%;    
+    top: 48%;
+    border: 1px solid white;
+    box-shadow: 5px 5px 15px 10px rgba(102, 75, 75, .3);
+    
+}
+.article-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ol {
+    margin-left: 25%;    
+}
+li {
+    margin-bottom: 5%;
+}
+h1 {
+    margin-bottom: 3%;
+}
+.image-gallery {
+    position:relative;
+    top: 25VH;
+    left: 10vh;
+    width: 65%;
+    height: 30vh;
+    flex-wrap: wrap;
+}
+.placeholder-image {
+    width: 25%;
+    padding: 50px; 
+}
+.view-larger {
+    text-align: right;
+    color:rgb(42, 171, 226);
+    margin-right: 25%;
+}
+.footer-row {
+    position: relative;
+    top: 90%;
+    width: 100%;
+    height: 9.5vh;
+    display: flex;
+    align-items: center;   
+    background-color: rgb(42, 171, 226);        
+      
+}
+.footer-text {
+    margin-left: 15px;
+}
