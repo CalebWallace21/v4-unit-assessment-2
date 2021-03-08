@@ -72,7 +72,7 @@ let compareNums = (num1, num2) => {
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-let bestMovie = name => 'Sharknado is the best movie ever!'
+let bestMovie = name => `${name} is the best movie ever!`
   
   
 ////////////////////PROBLEM 6////////////////////
@@ -262,8 +262,9 @@ const fidoSpeak = bark.call(fido)
     Tricks will come from that context, so you should reference 'this.tricks' to access the correct array.
 */
 
-function teachTrick (trick){
-    return this.trick.push(trick)
+function teachTrick (trick){    
+    this.tricks.push(trick)
+    return this.tricks
 }
 
 

@@ -35,9 +35,10 @@ let foods = [
   and then adding the results together. 
 */
 
-// foods.forEach(function(element){
-//   element.calories = (element.carbs * 4) + (elements.protein *4) + (elements.fat * 9)
-// })
+foods.forEach(item => {
+  item.calories = (item.carbs * 4) + (item.protein * 4) + (item.fat * 9)
+})
+console.log(foods)
 
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
@@ -83,7 +84,11 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-// const saleProducts = products.map(x => x.price * .75)
+const saleProducts = products.map((item) => ({
+  name: item.name,
+  color: item.color,
+  price: item.price * .75
+}))
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -93,7 +98,9 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-// const blueProducts = saleProducts.filter(elem => elem.color = 'blue')
+const blueProducts = saleProducts.filter(
+  blue => blue.color.includes('blue')
+);
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -101,7 +108,7 @@ const products = [
   Use the reduce method to add up the prices of the blueProducts. 
   Save the result to a variable called orderTotal.
 */
-// const orderTotals = blueProducts.map(elem => elem + elem.price)
+const orderTotal = blueProducts.reduce((acc, cur) => acc + cur.price, 0);
 
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
@@ -158,7 +165,7 @@ const {email} = ellensInfo
   from shippingInfo to new variables using destructuring.
 */
 
-const {zipCode, state} = ellensInfo
+const { state, zipCode } = shippingInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
