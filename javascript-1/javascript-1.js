@@ -72,7 +72,7 @@ let compareNums = (num1, num2) => {
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-let bestMovie = name => `${name} is the best movie ever!`
+const bestMovie = name => `${name} is the best movie ever!`
   
   
 ////////////////////PROBLEM 6////////////////////
@@ -80,7 +80,7 @@ let bestMovie = name => `${name} is the best movie ever!`
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-let jsNinja = name => 'I am a JavaScript ninja!'
+const jsNinja = name => 'I am a JavaScript ninja!'
   
 
 ////////////////////PROBLEM 7////////////////////
@@ -195,9 +195,9 @@ let pairsArray = []
 //DO NOT EDIT CODE ABOVE
 
 for (let i = 0; i < lettersToPair.length; i++) {
-    for(let j = lettersToPair.length - 1; j > 1; j--){
+    for(let j = i+1; j < lettersToPair.length; j++){
         if(lettersToPair[i] === lettersToPair[j]){
-            pairsArray.push(lettersToPair.indexOf([i]), lettersToPair.indexOf([j]))
+            pairsArray.push([lettersToPair.indexOf(lettersToPair[i]), lettersToPair.lastIndexOf(lettersToPair[j])])
         }
     }
 }
